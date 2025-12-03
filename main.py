@@ -32,8 +32,7 @@ def get_input(year, day):
     }
 
     new_url = url + str(year) + "/day/" + str(day) + "/input"
-    print(new_url)
-    response = requests.post(new_url, json=payload, headers=headers, cookies=cookies)
+    response = requests.post(new_url, headers=headers, cookies=cookies)
     return response.text
 
 @app.command()
