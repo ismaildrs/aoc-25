@@ -11,7 +11,6 @@ def solution(file):
             if line == "":
                 empty_line = True
                 continue
-            # print(line.split("-"))
             intervals.append([int (v) for v in line.split("-")])
         else:
             value = int(line)
